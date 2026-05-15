@@ -1,0 +1,39 @@
+{
+    "name": "grobinson3108/laravel-mcp-server",
+    "description": "Build authenticated MCP (Model Context Protocol) servers in Laravel — expose your app to Claude Desktop, Claude Code, ChatGPT and more, with Sanctum auth out of the box.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "mcp", "model-context-protocol", "claude", "claude-code", "claude-desktop", "ai", "llm", "anthropic", "sanctum"],
+    "authors": [
+        {
+            "name": "Greg Robinson",
+            "email": "greg@audelalia.fr",
+            "homepage": "https://audelalia.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0|^13.0",
+        "laravel/sanctum": "^4.0",
+        "logiscape/mcp-sdk-php": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrobinSon\\LaravelMcpServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrobinSon\\LaravelMcpServer\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    }
+}
